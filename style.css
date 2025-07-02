@@ -1,61 +1,124 @@
-body {
+/* Fuente Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
 }
 
-.container {
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 30px;
-  text-align: center;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #235784;
+  color: white;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 5px;
-  color: #235784;
-}
-
-h2 {
+.logo {
   font-size: 1.5rem;
-  margin-top: 0;
-  color: #567d96;
+  font-weight: bold;
 }
 
-p {
-  font-size: 1rem;
-  margin: 20px 0;
-}
-
-.services {
+nav ul {
   list-style: none;
-  padding: 0;
-  margin: 20px 0;
+  display: flex;
+  gap: 20px;
 }
 
-.services li {
-  margin: 10px 0;
-  font-size: 1rem;
-}
-
-.whatsapp-btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 25px;
-  background-color: #25d366;
+nav ul li a {
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
 }
 
-.whatsapp-btn:hover {
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.inicio {
+  background: #e6f1f5;
+}
+
+.servicios ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.servicios li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 20px auto;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #235784;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c466b;
+}
+
+.btn-wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 2rem;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.btn-wpp:hover {
   background-color: #1ebc59;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
 }
