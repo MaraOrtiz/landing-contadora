@@ -1,37 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contadora María Pérez</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  
-  <body>
-    <section class="container">
-      <h1>María Pérez</h1>
-      <h2>Contadora Pública</h2>
-      <p>
-        Asesoramiento contable y tributario para profesionales, pymes y
-        emprendedores.
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Milagros Contadora</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-      <ul class="services">
-        <li>📌 Liquidación de impuestos</li>
-        <li>📌 Monotributo y Autónomos</li>
-        <li>📌 Altas de CUIT</li>
-        <li>📌 Asesoramiento en AFIP</li>
+  <!-- Menú -->
+  <header>
+    <div class="logo">Milagros Contadora</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
+    </nav>
+  </header>
 
-      <a
-        href="https://wa.me/5491123456789"
-        target="_blank"
-        class="whatsapp-btn"
-      >
-        📲 Escribime por WhatsApp
-      </a>
-    </section>
-    <script src="script.js"></script>
+  <!-- Inicio -->
+  <section id="inicio" class="section inicio">
+    <h1>Asesoramiento Contable Profesional</h1>
+    <p>Soluciones claras para tu emprendimiento, pyme o actividad independiente.</p>
+  </section>
 
-  </body>
+  <!-- Servicios -->
+  <section id="servicios" class="section servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>📌 Monotributo / Autónomos</li>
+      <li>📌 Liquidación de impuestos</li>
+      <li>📌 Altas de CUIT</li>
+      <li>📌 Asesoramiento en AFIP</li>
+    </ul>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section contacto">
+    <h2>Contacto</h2>
+    <p>Completá el formulario o escribime directo al WhatsApp 📲</p>
+    <form>
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Tu consulta" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/549XXXXXXXXXX" class="btn-wpp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
 </html>
